@@ -64,7 +64,7 @@ const Navbar = () => {
                         </li>
                     ))}
                     <li className='text-white py-1 '>
-                    <Link to="/login" >Log in</Link>
+                    <Link to="/login" >Log In</Link>
                     </li>
 
 

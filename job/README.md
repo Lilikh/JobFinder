@@ -15,8 +15,16 @@ Set two color on extend section  of Tailwind.config.js.
 Sst some file such as data salary json and also job json and also Images on Public folder.
 Set Components folder avd creat all of the features on the component folder such as Navbar, footer, ...
 
+### Create Jobe Page(PostJob) ###
+On section of Navbar , there is a post job for use which want to create a jobe and publishe as hire manger ,I've use  hook form and first go to this link===>https://react-hook-form.com/get-started
+then install hook form ===>npm install react-hook-form
+
+On Create job page
 For responsive as mobile i've installed react icons ====> npm install react-icons --save
 Try to create several components on components folde and connect them to home page 
+
+On section of the select first install ===> npm i react-select
+and in spire frome this linke for create select form ===> https://react-select.com/home
 
 
 *** Install ***

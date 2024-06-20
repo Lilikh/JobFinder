@@ -8,12 +8,30 @@ const CreateJob = () => {
 
     const {
         register,
-        handleSubmit,
+        handleSubmit,reset,
      
         formState: { errors },
       } = useForm()
     
-      const onSubmit = (data) =>{ console.log(data)}
+      const onSubmit = (data) =>
+        
+        { data.skills=selectedOption;
+          console.log(data);
+        fetch("http://localhost:3000/post-job",{
+          method:"POST",
+          headers:{"Content-type": "application/json"},
+          body:JSON.stringify(data)
+        })
+          .then(res=>res.json())
+          .then((result)=>{
+            console.log(result);
+            if(result.acknowledged ===true){
+              alert("Job Posted Successfully !!!")
+            }
+            reset()
+              
+        })
+      }
       const options = [
         {value : "JavaScript", label:"JavaScrip"},
         {value : "C++", label:"C++"},
@@ -106,8 +124,9 @@ const CreateJob = () => {
             {/* 5th row */}
         <div>
         <label className='block mb-2 text-lg'>Require Skill Sets:</label>
-        <CreatableSelect defaultValue={selectedOption}
-        onChange={selectedOption}
+        <CreatableSelect 
+        defaultValue={selectedOption}
+        onChange={setSelectedOption}
         options={options}
         isMulti
          className='create-job-input py-4' />

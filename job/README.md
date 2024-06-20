@@ -27,6 +27,13 @@ On section of the select first install ===> npm i react-select
 and in spire frome this linke for create select form ===> https://react-select.com/home
 
 
+
+*** Backend ***
+npm install express cors mongodb dotnet 
+I install  mongodb icloud and in post job page , save all of the data , use fetch on create job section /Page, and checked every thing it works on post-job
+
+
+
 *** Install ***
 
 install tailwindCSS,
